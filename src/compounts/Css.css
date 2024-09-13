@@ -1,0 +1,192 @@
+/* Reset margins and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header container styling */
+  .header-container {
+    display: flex; /* Use flexbox for better layout */
+    align-items: center; /* Center items vertically */
+    margin: 0;
+    padding: 10px;
+    background-color: #f3f3f3;
+    text-align: center;
+  }
+  
+  /* Header text styling */
+  .header-container h1 {
+    font-size: 40px;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Header text hover effect */
+  .header-container h1:hover {
+      font-family:'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #f5f5f5; /* Optional backgro
+    teund color change on hover */
+  }
+  
+  /* Header image styling */
+  .header-image {
+    width: 100px; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing on the right side */
+  }
+  .footer-text {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.Lside-buttons {
+    padding: 10px;
+  
+    margin-left: 0;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+    float: left;
+    height: calc(100vh - 30vh);
+    box-sizing: border-box;
+}
+
+.L-Button {
+    width: 100px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #e0e0e0; /* Default color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.L-Button p {
+    margin: 0;
+}
+
+.L-Button.active {
+    background-color: #7cff70; /* Active button color */
+    color: #fff; /* Active text color */
+}
+.L-Button:hover
+{
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.Rside-container
+{padding: 10px;
+margin-top: 30px;
+ margin-left: 18vh;
+ margin-right: 2vh;
+ border-radius: 10px;
+    height: calc(100vh - 30vh);
+    background-color: #e5ffe2;
+}
+.Rside-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 30vh);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .input-field {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 90px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    margin-top: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-shadow: #7cff70;
+  }
+  .submit-button:hover
+  {
+    box-shadow: 2px 2px 10px rgba(3, 74, 3, 0.5);
+
+  }
+  
+  .text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scrollable-text {
+    border-radius: 10px;
+   background-color: #ffffc7;
+   font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  
+  .full-screen-textarea {
+    height: calc(100vh - 30vh);
+  }
+  .pdf-container
+  {
+    background-color:  #e5ffe2; 
+    font-family: 'Times New Roman', Times, serif;
+    height: calc(100vh - 30vh);
+    border-radius: 10px;
+    margin-left: 18vh;
+
+    text-align: center;
+  }
+  .pdf-container h1{
+    padding-top: 300px;
+    
+
+  }
+  .pdf-container h1:hover{
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+
+  }
+  .button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .copy-button, .share-button ,.refresh-button{
+    padding: 8px 16px;
+    background-color: rgb(83, 246, 255);
+    color: rgb(21, 18, 18);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .copy-button:hover, .share-button:hover, .refresh-button:hover {
+    background-color: #85fcc0;
+    box-shadow: 2px 2px 10px rgba(3, 74, 3, 0.5);
+  }
+  
