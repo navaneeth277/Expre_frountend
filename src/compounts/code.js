@@ -20,9 +20,9 @@ export default function Code() {
     e.preventDefault();
 
     try {
-      await axios.post('https://exper-backend.onrender.com/', { data: `Write a code for ${inputValue} in ${language} only code without side headings` });
+      await axios.post('https://expre-backend.onrender.com/', { data: `Write a code for ${inputValue} in ${language} only code without side headings` });
 
-      const response = await axios.get('https://exper-backend.onrender.com/');
+      const response = await axios.get('https://expre-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
