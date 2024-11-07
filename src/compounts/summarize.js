@@ -16,9 +16,9 @@ export default function Summarize() {
 
     try {
 
-      await axios.post('http://localhost:5000/', { data: `summarize the ${inputValue}` });
+      await axios.post('https://exper-backend.onrender.com/', { data: `summarize the ${inputValue}` });
 
-      const response = await axios.get('http://localhost:5000/');
+      const response = await axios.get('https://exper-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
