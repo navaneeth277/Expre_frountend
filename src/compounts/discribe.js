@@ -15,9 +15,9 @@ export default function Discribe() {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/', { data: `describe about ${inputValue}` });
+      await axios.post('https://exper-backend.onrender.com:5000/', { data: `describe about ${inputValue}` });
 
-      const response = await axios.get('http://localhost:5000/');
+      const response = await axios.get('https://exper-backend.onrender.com:5000/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
