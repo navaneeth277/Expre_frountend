@@ -21,9 +21,9 @@ export default function SubjectWise() {
 
     try {
       const dataToSend = `${inputValue} with ${numOfWords} words`;
-      await axios.post('https://exper-backend.onrender.com/', { data: dataToSend });
+      await axios.post('https://expre-backend.onrender.com/', { data: dataToSend });
 
-      const response = await axios.get('https://exper-backend.onrender.com/');
+      const response = await axios.get('https://expre-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
