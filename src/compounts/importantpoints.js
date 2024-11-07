@@ -15,9 +15,9 @@ export default function Importantpoints() {
     e.preventDefault();
 
     try {
-      await axios.post('https://exper-backend.onrender.com:5000/', { data: `make important points from${inputValue}` });
+      await axios.post('https://exper-backend.onrender.com/', { data: `make important points from${inputValue}` });
 
-      const response = await axios.get('https://exper-backend.onrender.com:5000/');
+      const response = await axios.get('https://exper-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
