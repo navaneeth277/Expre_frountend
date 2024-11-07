@@ -21,9 +21,9 @@ export default function SubjectWise() {
 
     try {
       const dataToSend = `${inputValue} in ${subjectName}`;
-      await axios.post('https://exper-backend.onrender.com:5000/', { data: dataToSend });
+      await axios.post('https://exper-backend.onrender.com:/', { data: dataToSend });
 
-      const response = await axios.get('https://exper-backend.onrender.com:5000/');
+      const response = await axios.get('https://exper-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
