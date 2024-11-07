@@ -15,9 +15,9 @@ export default function Keyworbs() {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/', { data: `make the keywords from${inputValue}` });
+      await axios.post('https://exper-backend.onrender.com/', { data: `make the keywords from${inputValue}` });
 
-      const response = await axios.get('http://localhost:5000/');
+      const response = await axios.get('https://exper-backend.onrender.com/');
       setReceivedData(response.data.data);
 
       setSubmitted(true);
