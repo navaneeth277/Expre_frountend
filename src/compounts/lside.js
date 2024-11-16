@@ -13,7 +13,7 @@ export default function Lside() {
     }
     
     else if(index===1)
-        navigate('Subject wise')
+        navigate('Subject_wise')
     else if(index===2)
         navigate('/discribe')
     else if(index===3)
