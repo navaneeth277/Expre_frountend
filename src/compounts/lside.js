@@ -24,7 +24,7 @@ export default function Lside() {
       navigate('/essay');
     } else if (index === 7) {
       navigate('/code');
-    } 
+    
     } else {
       navigate('/rside');
     }
